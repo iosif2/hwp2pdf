@@ -35,3 +35,12 @@ GET /files/{file_id}.pdf → stream PDF response
 **Font dependency**: PDF quality depends heavily on Korean fonts. Fonts (Noto Sans KR / Noto Serif KR) must be present at the path rhwp expects (e.g. `/app/fonts/`). Environment differences in font paths cause rendering divergence.
 
 **Scope (initial phase)**: synchronous single-node conversion only — no async worker queues, no distributed processing, no OCR fallback.
+
+## Docs
+
+| 문서 | 설명 |
+|------|------|
+| [docs/overview.md](docs/overview.md) | 프로젝트 목적, 범위, 기술 스택, 리스크 요약 |
+| [docs/architecture.md](docs/architecture.md) | 시스템 구조, 레이어 역할, 변환 파이프라인 상세 |
+| [docs/api.md](docs/api.md) | API 엔드포인트 명세 및 요청/응답 예시 |
+| [docs/rhwp-notes.md](docs/rhwp-notes.md) | rhwp 조사 결과, 제약, 폰트 이슈, 리스크 |
